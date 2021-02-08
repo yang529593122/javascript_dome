@@ -5,7 +5,6 @@ function add (...args){
 function currying(fn){
   let args=[]
   return function temp(...newArgs){
-    console.log(newArgs,666)
     if(newArgs.length){
       args=[
         ...args,
