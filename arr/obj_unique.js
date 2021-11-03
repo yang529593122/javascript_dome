@@ -37,7 +37,7 @@ const person = [
 function arrQcObject(arr,itemName){
     let obj = {};
     arr = arr.reduce((current, next) => {
-        obj[next[itemName]] ? '' : (obj[next[itemName]] = true && current.push(next));
+        obj[next[itemName]] ? false : (obj[next[itemName]] = true && current.push(next));
         return current;
     }, []);
     return arr;
