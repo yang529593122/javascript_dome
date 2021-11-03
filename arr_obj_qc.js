@@ -44,3 +44,21 @@ function arrQcObject(arr,itemName){
 }
 
 console.log(arrQcObject(person,'name'))
+
+
+// let arr = [2,5,7,9]
+//
+//  function  maxnum(arr){
+//     let j =0;
+//     let maxnum =0
+//     for (let i = 0;i<arr.length;i++){
+//       if(arr[j]<arr[i]){
+//           maxnum =  maxnum < arr[i]-arr[j] ?  arr[i]-arr[j] : maxnum
+//       }else{
+//           j = i
+//       }
+//     }
+//      return maxnum
+//
+//  }
+// console.log(maxnum(arr),22)

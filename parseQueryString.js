@@ -9,4 +9,5 @@ function parseQueryString(url){
       return pre;
     }, {});
 }
-console.log(parseQueryString("http://iauto360.cn/index.php?key0=0&key1=1&key_2=2"))
+console.log(parseQueryString("http://iauto360.cn/index.php?user=0&id=1&ccc=2"))
+

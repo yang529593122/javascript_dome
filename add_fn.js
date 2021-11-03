@@ -12,13 +12,12 @@ function currying(fn){
       ]
       return temp
     }else{
-      let val = fn.apply(this,args)
-      args=[]
-      return val
+      return val = fn.apply(this,args)
     }
   }
 }
 let addCurry=currying(add)
+console.log(addCurry(1,2)())
 console.log(addCurry(1)(2)(3)(4)(5)())
 console.log(addCurry(1)(2)(3,4,5)())
 console.log(addCurry(1)(2,3,4,5)())
